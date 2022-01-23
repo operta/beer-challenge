@@ -1,12 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {GoogleMapsModule} from "@angular/google-maps";
 
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    GoogleMapsModule
   ]
 })
-export class PlacesModule { }
+export class PlacesModule {
+}
