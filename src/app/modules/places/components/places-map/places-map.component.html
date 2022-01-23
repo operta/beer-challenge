@@ -1,3 +1,6 @@
 <ng-container *ngIf="apiLoaded$ | async">
-  <google-map></google-map>
+  <google-map>
+    <map-marker *ngFor="let marker of placeLocationMarkers$ | async"
+                [position]="marker"></map-marker>
+  </google-map>
 </ng-container>
