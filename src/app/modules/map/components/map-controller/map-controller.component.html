@@ -1,0 +1,14 @@
+<div class="card card-block">
+  <div class="card-header">
+    <div class="d-flex justify-content-between">
+      <div class="btn-group" btnRadioGroup [(ngModel)]="selectedMapType" (click)="createMapComponent()">
+        <label class="btn btn-success mb-0" [btnRadio]="mapType[mapType.MAPBOX]">MapBox</label>
+        <label class="btn btn-success mb-0" [btnRadio]="mapType[mapType.LEAFLET]">Leaflet</label>
+        <label class="btn btn-success mb-0" [btnRadio]="mapType[mapType.GOOGLE]">Google Maps</label>
+      </div>
+      <button class="btn btn-secondary" (click)="addMarkersToMap()">ADD MARKERS</button>
+    </div>
+  </div>
+</div>
+
+<div class="map_canvas_container" #mapContainer ></div>

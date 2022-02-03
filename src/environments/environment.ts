@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  GOOGLE_MAPS_API: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBm3JBOsD5b6m4LbE1Yn0FP8aIIo6jT2Og&libraries=places",
+  MAPBOX_ACCESS_TOKEN: "pk.eyJ1IjoiZHphbm9wZXJ0YSIsImEiOiJja3l5bHZpN3owdGplMnJzMzd4cWdjNjA4In0.YdJuMQYMR9zdb2oWTCmFAQ"
 };
 
 /*

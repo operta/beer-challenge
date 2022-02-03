@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {PlacesModule} from "./modules/places/places.module";
+import {MapModule} from "./modules/map/map.module";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ButtonsModule} from "ngx-bootstrap/buttons";
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import {PlacesModule} from "./modules/places/places.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PlacesModule
+    MapModule,
+    BrowserAnimationsModule,
+    ButtonsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
